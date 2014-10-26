@@ -6,7 +6,7 @@ Release:	1
 # COPYING says so, no other licensing information found
 License:	LGPL v2
 Group:		Libraries
-Source0:	https://github.com/savonet/shine/archive/%{version}.tar.gz?/%{name}-%{version}.tar.gz
+Source0:	https://github.com/savonet/shine/archive/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	88a818d8006dbde6ce3a7b69b91e5c8c
 URL:		https://github.com/savonet/shine/
 BuildRequires:	autoconf >= 2.50
