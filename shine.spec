@@ -1,13 +1,13 @@
 Summary:	Fixed-point MP3 encoding library
 Summary(pl.UTF-8):	Biblioteka stałoprzecinkowego kodowania MP3
 Name:		shine
-Version:	3.1.0
-Release:	2
+Version:	3.1.1
+Release:	1
 # COPYING says so, no other licensing information found
 License:	LGPL v2
 Group:		Libraries
 Source0:	https://github.com/savonet/shine/archive/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	88a818d8006dbde6ce3a7b69b91e5c8c
+# Source0-md5:	ff41cb139c25470f2d9c9acc9f97cc8d
 URL:		https://github.com/savonet/shine/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
