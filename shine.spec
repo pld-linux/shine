@@ -6,6 +6,7 @@ Release:	1
 # COPYING says so, no other licensing information found
 License:	LGPL v2
 Group:		Libraries
+#Source0Download: https://github.com/toots/shine/releases
 Source0:	https://github.com/savonet/shine/archive/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	ff41cb139c25470f2d9c9acc9f97cc8d
 URL:		https://github.com/savonet/shine/
