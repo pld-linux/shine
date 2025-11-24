@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	static_libs	# static libraries
+
 Summary:	Fixed-point MP3 encoding library
 Summary(pl.UTF-8):	Biblioteka stałoprzecinkowego kodowania MP3
 Name:		shine
@@ -13,6 +17,7 @@ URL:		https://github.com/savonet/shine/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	libtool >= 2:2
+BuildRequires:	rpmbuild(macros) >= 1.527
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -53,7 +58,8 @@ Statyczna biblioteka shine.
 %{__aclocal} -I m4
 %{__autoconf}
 %{__automake}
-%configure
+%configure \
+	%{__enable_disable static_libs static}
 
 %{__make}
 
@@ -85,6 +91,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/shine
 %{_pkgconfigdir}/shine.pc
 
+%if %{with static_libs}
 %files static
 %defattr(644,root,root,755)
 %{_libdir}/libshine.a
+%endif
