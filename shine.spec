@@ -13,6 +13,7 @@ Group:		Libraries
 #Source0Download: https://github.com/toots/shine/releases
 Source0:	https://github.com/savonet/shine/archive/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	ff41cb139c25470f2d9c9acc9f97cc8d
+Patch0:		types.patch
 URL:		https://github.com/savonet/shine/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
@@ -52,6 +53,7 @@ Statyczna biblioteka shine.
 
 %prep
 %setup -q
+%patch -P0 -p1
 
 %build
 %{__libtoolize}

@@ -1,0 +1,11 @@
+--- shine-3.1.1/src/lib/l3mdct.h.orig	2017-07-28 20:52:24.000000000 +0200
++++ shine-3.1.1/src/lib/l3mdct.h	2025-11-24 14:58:46.821789734 +0100
+@@ -1,7 +1,7 @@
+ #ifndef shine_MDCT_H
+ #define shine_MDCT_H
+ 
+-void shine_mdct_initialise();
++void shine_mdct_initialise(shine_global_config *config);
+ void shine_mdct_sub(shine_global_config *config, int stride);
+ 
+ #endif
