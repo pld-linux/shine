@@ -6,7 +6,7 @@ Summary:	Fixed-point MP3 encoding library
 Summary(pl.UTF-8):	Biblioteka stałoprzecinkowego kodowania MP3
 Name:		shine
 Version:	3.1.1
-Release:	1
+Release:	2
 # COPYING says so, no other licensing information found
 License:	LGPL v2
 Group:		Libraries
